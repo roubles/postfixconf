@@ -37,6 +37,9 @@ $ echo "42" | mail -s "The answer to life the universe and everything" someone@g
 
 # Trouble in paradise
 If you are having issues, checkout /var/log/mail.log
+```
+$ tail -f /var/log/mail.log
+```
 
 You can see your outgoing mail queue as follows:
 ```
