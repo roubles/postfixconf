@@ -12,7 +12,7 @@ Note: This must be done as sudo.
 # Sample output
 ```
 $ sudo ./postfixconf.sh 
-Password:
+Password:                  #    <===================== This password is for sudo, fyi
 Type the SMTP hostname and port (example: smtp.gmail.com:587): smtp.gmail.com:587
 Type the full username (example: whatmeworry@gmail.com): whatever@gmail.com
 whatever@gmail.com's Password: 
