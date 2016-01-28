@@ -59,6 +59,10 @@ do
     fi
 done
 
+echo ""
+echo ""
+echo "Working..."
+
 function configure_smtp() {
     echo "Updating $MAIN_CF"
     updateLineContaining "#postfixconf relayhost"            "#postfixconf relayhost $HOSTNAME_PORT"           $MAIN_CF
