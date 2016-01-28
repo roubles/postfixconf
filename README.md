@@ -32,7 +32,7 @@ Do you want to tail /var/log/mail.log [y|n]:n
 # Now what?
 You should now be able to send emails as such:
 ```
-$ echo "42" | mail -s "The answer to life the universe and everything"  someone@gmail.com
+$ echo "42" | mail -s "The answer to life the universe and everything" someone@gmail.com
 ```
 
 # Trouble in paradise
