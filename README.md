@@ -16,6 +16,9 @@ Type the SMTP hostname and port (example: smtp.gmail.com:587): smtp.gmail.com:58
 Type the full username (example: whatmeworry@gmail.com): whatmeworry@gmail.com
 whatmeworry@gmail.com's Password: 
 Confirm whatmeworry@gmail.com's Password: 
+
+
+Working...
 That relay host smtp.gmail.com:587 is already in /etc/postfix/main.cf. Attempting to update.
 That relay host is already in /etc/postfix/sasl_passwd. Attempting to update.
 Configuring gmail smtp
