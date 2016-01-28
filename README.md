@@ -1,5 +1,5 @@
 # postfixconf - Configure Postfix for Gmail (or any other) SMTP on Mac OSX 
-This script will enable and configure command line email on OSX. It basically does what is described in this [gist](https://gist.github.com/roubles/28cb8864df74a8eb06e0), but I was getting tired of repeating this on all my machines.
+This script will enable and configure command line email on OSX. It basically does what is described [here](http://www.developerfiles.com/how-to-send-emails-from-localhost-mac-os-x-el-capitan/), but I was getting tired of repeating this on all my machines.
 
 # Run
 ```
@@ -12,19 +12,20 @@ Note: This must be done as sudo.
 # Sample output
 ```
 $ sudo ./postfixconf.sh 
-Password:                  #    <===================== This password is for sudo, fyi
 Type the SMTP hostname and port (example: smtp.gmail.com:587): smtp.gmail.com:587
-Type the full username (example: whatmeworry@gmail.com): whatever@gmail.com
-whatever@gmail.com's Password: 
-Confirm whatever@gmail.com's Password: 
-That relay host smtp.gmail.com:587 is already in /etc/postfix/main.cf. Attempting to remove.
-That relay host is already in /etc/postfix/sasl_passwd. Attempting to remove.
-Adding relay host smtp.gmail.com:587 to /etc/postfix/main.cf
-Adding smtp.gmail.com:587 whatever@gmail.com:******** to /etc/postfix/sasl_passwd
+Type the full username (example: whatmeworry@gmail.com): whatmeworry@gmail.com
+whatmeworry@gmail.com's Password: 
+Confirm whatmeworry@gmail.com's Password: 
+That relay host smtp.gmail.com:587 is already in /etc/postfix/main.cf. Attempting to update.
+That relay host is already in /etc/postfix/sasl_passwd. Attempting to update.
+Configuring gmail smtp
+Updating /etc/postfix/main.cf
+Updating /etc/postfix/sasl_passwd
+NOTE! For gmail you must enable less secure apps for postfix to work: https://www.google.com/settings/security/lesssecureapps
 Restarting postfix
-Sending test email to whatever@gmail.com
-You are done. Check whatever@gmail.com's email.
-Do you want to tail logs [y|n]:n
+Sending test email to whatmeworry@gmail.com
+You are done. Check whatmeworry@gmail.com's email.
+Do you want to tail /var/log/mail.log [y|n]:n 
 
 ```
 
@@ -36,3 +37,8 @@ $ echo "All your base are belong to us." | mail -s "Testing. 1. 2. 3."  someone@
 
 # Trouble in paradise
 If you are having issues, checkout /var/log/mail.log
+
+You can see your outgoing mail queue as follows:
+```
+$ mailq
+```
