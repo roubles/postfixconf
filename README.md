@@ -1,5 +1,4 @@
-# postfixconf
-
+# postfixconf - Configure Postfix for Gmail (or any other) SMTP on Mac OSX 
 This script will enable and configure command line email on OSX. It basically does what is described in this [gist](https://gist.github.com/roubles/28cb8864df74a8eb06e0).
 
 # Run
