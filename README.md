@@ -25,4 +25,10 @@ Sending test email to whatever@gmail.com
 You are done. Check whatever@gmail.com's email.
 Do you want to tail logs [y|n]:n
 
-``
+```
+
+# Now what?
+You should now be able to send emails as such:
+```
+$ echo "All your base are belong to us." | mail -s "Testing. 1. 2. 3."  someone@gmail.com
+```
