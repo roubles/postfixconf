@@ -34,5 +34,5 @@ You should now be able to send emails as such:
 $ echo "All your base are belong to us." | mail -s "Testing. 1. 2. 3."  someone@gmail.com
 ```
 
-# Trouble in Paradise
+# Trouble in paradise
 If you are having issues, checkout /var/log/mail.log
